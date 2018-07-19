@@ -1,0 +1,113 @@
+﻿<HTML>
+<HEAD>
+<META HTTP-EQUIV="charset" CONTENT="utf-8">
+<TITLE>Registro de reproducciones para Script8</TITLE>
+<STYLE TYPE="text/css">
+<!--
+  table caption {color: darkblue; font-size: x-large; font-weight: bold}
+  td {align: left; font-weight: bold}
+  td.fail {color: darkred; width: 10% }
+  td.warn {color: darkgoldenrod; width: 10% }
+  td.pass {color: darkgreen; width: 10% }
+  td.unkn {color: darkcyan; width: 10% }
+  td.info {width: 10% }
+  td.time {width: 30%; font-weight: normal}
+  td.note {align: left; font-weight: bold}
+  li {font-weight: normal}
+-->
+</STYLE>
+<SCRIPT>
+<!--
+function comparator(logDir,base,exp,act)
+{
+	try{
+		document.ComparatorApplet.startComparatorEx(base,exp,act,logDir);
+	}
+	catch(e){
+	if( (navigator.userAgent.indexOf("MSIE") != -1) || (!!document.documentMode == true) )
+	{
+		alert("CRFCN0309E: Error al crear la visualización del punto de verificación:\nCRFCN0310E: Para ver los resultados de los puntos de verificación, se debe asociar con el navegador un JRE habilitado (1.3.1_02 o posterior)");
+	}
+	else
+	{
+		alert("Log results can no longer be viewed in all browsers.\nView log results in the Functional Tester IDE or in certain browsers.");
+	}
+	}
+}
+//-->
+</SCRIPT>
+</HEAD>
+<BODY>
+<TABLE WIDTH="100%" border="1" rules="rows" summary="Sucesos de registro">
+<SCRIPT>
+<!--
+if (self == top)
+	document.write('<CAPTION>Archivo de anotaciones: Script8</CAPTION>')
+//-->
+</SCRIPT>
+<TR>
+<TD>&nbsp;</TD>
+<TD CLASS="time">19 de julio de 2018 10:25:50 AM CDT</TD>
+<TD CLASS="note">Inicio de script [Script8]</TD>
+</TR>
+<TR><TD COLSPAN=3><UL>
+<LI><I>line_number = </I>1</LI>
+<LI><I>script_iter_count = </I>0</LI>
+<LI><I>script_name = </I>Script8</LI>
+<LI><I>script_id = </I>Script8.java</LI>
+</UL>
+</TD></TR>
+<TR>
+<TD>&nbsp;</TD>
+<TD CLASS="time">19 de julio de 2018 10:25:50 AM CDT</TD>
+<TD CLASS="note">Iniciar aplicación [ClassicsJavaA]</TD>
+</TR>
+<TR><TD COLSPAN=3><UL>
+<LI><I>name = </I>ClassicsJavaA</LI>
+<LI><I>line_number = </I>32</LI>
+<LI><I>script_name = </I>Script8</LI>
+<LI><I>script_id = </I>Script8.java</LI>
+<LI><I>startapp_type = </I>JAVA</LI>
+<LI><I>startapp_executable = </I>ClassicsJavaA.jar</LI>
+<LI><I>startapp_working_directory = </I>C:\Program Files\IBM\SDP\FunctionalTester\FTSamples</LI>
+<LI><I>startapp_arguments = </I> </LI>
+</UL>
+</TD></TR>
+<TR ID="vp0">
+<TD  CLASS="pass">Superado</TD>
+<TD CLASS="time">19 de julio de 2018 10:25:53 AM CDT</TD>
+<TD CLASS="note">Se ha pasado el punto de verificación [Details_standard].</TD>
+</TR>
+<TR><TD COLSPAN=3><UL>
+<LI><I>vp_type = </I>object_property</LI>
+<LI><I>name = </I>Details_standard</LI>
+<LI><I>script_name = </I>Script8</LI>
+<LI><I>line_number = </I>39</LI>
+<LI><I>script_id = </I>Script8.java</LI>
+<LI><I>baseline = </I>resources\Script8.Details_standard.base.rftvp</LI>
+<LI><I>expected = </I>Script8.0000.Details_standard.exp.rftvp</LI>
+<P><A HREF="javascript:comparator(decodeURI(document.URL),'resources/Script8.Details_standard.base.rftvp','Script8.0000.Details_standard.exp.rftvp',null)">Ver resultados</A>
+</UL>
+</TD></TR>
+<TR>
+<TD ID="warn0" CLASS="warn">Aviso</TD>
+<TD CLASS="time">19 de julio de 2018 10:26:15 AM CDT</TD>
+<TD CLASS="note">"Habilitando el script de búsqueda, ha fallado la búsqueda por puntuación  "GuiTestObject(Nombre: <b>symphonyNo5</b>, Correlación: SymphonyNo5)</TD>
+</TR>
+<TR><TD COLSPAN=3><UL>
+<LI><I>script_name = </I>Script8</LI>
+<LI><I>line_number = </I>41</LI>
+<LI><I>script_id = </I>Script8.java</LI>
+</UL>
+</TD></TR>
+<TR>
+<TD ID="warn1" CLASS="warn">Aviso</TD>
+<TD CLASS="time">19 de julio de 2018 10:26:37 AM CDT</TD>
+<TD CLASS="note">"El script de búsqueda no puede encontrar el objeto de destino  "GuiTestObject(Nombre: <b>symphonyNo5</b>, Correlación: SymphonyNo5)</TD>
+</TR>
+<TR><TD COLSPAN=3><UL>
+<LI><I>script_name = </I>Script8</LI>
+<LI><I>line_number = </I>41</LI>
+<LI><I>script_id = </I>Script8.java</LI>
+</UL>
+</TD></TR>
